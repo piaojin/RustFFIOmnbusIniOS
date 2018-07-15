@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		768B46EE20E6966700426868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B46ED20E6966700426868 /* AppDelegate.swift */; };
+		768B46F020E6966700426868 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B46EF20E6966700426868 /* ViewController.swift */; };
+		768B46F320E6966700426868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B46F120E6966700426868 /* Main.storyboard */; };
+		768B46F520E6966900426868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 768B46F420E6966900426868 /* Assets.xcassets */; };
+		768B46F820E6966900426868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768B46F620E6966900426868 /* LaunchScreen.storyboard */; };
+		768B470320E6966900426868 /* RustFFIOmnbusIniOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B470220E6966900426868 /* RustFFIOmnbusIniOSTests.swift */; };
+		768B470E20E6966900426868 /* RustFFIOmnbusIniOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B470D20E6966900426868 /* RustFFIOmnbusIniOSUITests.swift */; };
+		768B471D20E6969100426868 /* IZipCodeDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B471C20E6969100426868 /* IZipCodeDatabase.swift */; };
+		768B472420E696B700426868 /* Cargo.toml in Resources */ = {isa = PBXBuildFile; fileRef = 768B471F20E696B700426868 /* Cargo.toml */; };
+		768B472520E696B700426868 /* Cargo.lock in Resources */ = {isa = PBXBuildFile; fileRef = 768B472020E696B700426868 /* Cargo.lock */; };
+		768B472620E696B700426868 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 768B472120E696B700426868 /* .gitignore */; };
+		768B472720E696B700426868 /* lib.rs in Resources */ = {isa = PBXBuildFile; fileRef = 768B472320E696B700426868 /* lib.rs */; };
+		768B472F20E6981D00426868 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 768B472E20E6981D00426868 /* Makefile */; };
+		768B474020E7EA2100426868 /* convertlib.sh in Resources */ = {isa = PBXBuildFile; fileRef = 768B473F20E7EA2100426868 /* convertlib.sh */; };
+		768B474420E7F58900426868 /* libRust_FFI_Omnbus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 768B474320E7F58900426868 /* libRust_FFI_Omnbus.a */; };
+		768B474C20E920AB00426868 /* SuperDogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B474B20E920AB00426868 /* SuperDogViewModel.swift */; };
+		768B474F20E926A600426868 /* swift_to_rust.rs in Resources */ = {isa = PBXBuildFile; fileRef = 768B474E20E926A600426868 /* swift_to_rust.rs */; };
+		768B475320E9ACCE00426868 /* rust_to_swift.rs in Resources */ = {isa = PBXBuildFile; fileRef = 768B475220E9ACCE00426868 /* rust_to_swift.rs */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		768B46FF20E6966900426868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 768B46E220E6966700426868 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 768B46E920E6966700426868;
+			remoteInfo = RustFFIOmnbusIniOS;
+		};
+		768B470A20E6966900426868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 768B46E220E6966700426868 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 768B46E920E6966700426868;
+			remoteInfo = RustFFIOmnbusIniOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		768B46EA20E6966700426868 /* RustFFIOmnbusIniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RustFFIOmnbusIniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		768B46ED20E6966700426868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		768B46EF20E6966700426868 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		768B46F220E6966700426868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		768B46F420E6966900426868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		768B46F720E6966900426868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		768B46F920E6966900426868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768B46FE20E6966900426868 /* RustFFIOmnbusIniOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RustFFIOmnbusIniOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		768B470220E6966900426868 /* RustFFIOmnbusIniOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustFFIOmnbusIniOSTests.swift; sourceTree = "<group>"; };
+		768B470420E6966900426868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768B470920E6966900426868 /* RustFFIOmnbusIniOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RustFFIOmnbusIniOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		768B470D20E6966900426868 /* RustFFIOmnbusIniOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustFFIOmnbusIniOSUITests.swift; sourceTree = "<group>"; };
+		768B470F20E6966900426868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768B471B20E6969100426868 /* I_Zip_Code_Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I_Zip_Code_Database.h; sourceTree = "<group>"; };
+		768B471C20E6969100426868 /* IZipCodeDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IZipCodeDatabase.swift; sourceTree = "<group>"; };
+		768B471F20E696B700426868 /* Cargo.toml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cargo.toml; sourceTree = "<group>"; };
+		768B472020E696B700426868 /* Cargo.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cargo.lock; sourceTree = "<group>"; };
+		768B472120E696B700426868 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		768B472320E696B700426868 /* lib.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lib.rs; sourceTree = "<group>"; };
+		768B472A20E696F200426868 /* RustFFIOmnbusIniOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RustFFIOmnbusIniOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		768B472E20E6981D00426868 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		768B473F20E7EA2100426868 /* convertlib.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = convertlib.sh; sourceTree = "<group>"; };
+		768B474320E7F58900426868 /* libRust_FFI_Omnbus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRust_FFI_Omnbus.a; path = Rust_FFI_Omnbus/target/debug/libRust_FFI_Omnbus.a; sourceTree = SOURCE_ROOT; };
+		768B474B20E920AB00426868 /* SuperDogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDogViewModel.swift; sourceTree = "<group>"; };
+		768B474D20E9212C00426868 /* SuperDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SuperDog.h; path = ../../../../../Downloads/SuperDog.h; sourceTree = "<group>"; };
+		768B474E20E926A600426868 /* swift_to_rust.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swift_to_rust.rs; sourceTree = "<group>"; };
+		768B475220E9ACCE00426868 /* rust_to_swift.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rust_to_swift.rs; sourceTree = "<group>"; };
+		76B81FEE20EBC49300D49EC9 /* I_Super_Dog_Delegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = I_Super_Dog_Delegate.h; sourceTree = "<group>"; };
+		76BA18FD20EE5BEA00F5D8D4 /* DogType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogType.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		768B46E720E6966700426868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768B474420E7F58900426868 /* libRust_FFI_Omnbus.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768B46FB20E6966900426868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768B470620E6966900426868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		768B46E120E6966700426868 = {
+			isa = PBXGroup;
+			children = (
+				768B471E20E696B700426868 /* Rust_FFI_Omnbus */,
+				768B46EC20E6966700426868 /* RustFFIOmnbusIniOS */,
+				768B470120E6966900426868 /* RustFFIOmnbusIniOSTests */,
+				768B470C20E6966900426868 /* RustFFIOmnbusIniOSUITests */,
+				768B46EB20E6966700426868 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		768B46EB20E6966700426868 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				768B46EA20E6966700426868 /* RustFFIOmnbusIniOS.app */,
+				768B46FE20E6966900426868 /* RustFFIOmnbusIniOSTests.xctest */,
+				768B470920E6966900426868 /* RustFFIOmnbusIniOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		768B46EC20E6966700426868 /* RustFFIOmnbusIniOS */ = {
+			isa = PBXGroup;
+			children = (
+				768B474320E7F58900426868 /* libRust_FFI_Omnbus.a */,
+				768B471B20E6969100426868 /* I_Zip_Code_Database.h */,
+				768B471C20E6969100426868 /* IZipCodeDatabase.swift */,
+				768B46ED20E6966700426868 /* AppDelegate.swift */,
+				768B46EF20E6966700426868 /* ViewController.swift */,
+				768B46F120E6966700426868 /* Main.storyboard */,
+				768B46F420E6966900426868 /* Assets.xcassets */,
+				768B46F620E6966900426868 /* LaunchScreen.storyboard */,
+				768B46F920E6966900426868 /* Info.plist */,
+				768B472A20E696F200426868 /* RustFFIOmnbusIniOS-Bridging-Header.h */,
+				768B474B20E920AB00426868 /* SuperDogViewModel.swift */,
+				768B474D20E9212C00426868 /* SuperDog.h */,
+				76B81FEE20EBC49300D49EC9 /* I_Super_Dog_Delegate.h */,
+				76BA18FD20EE5BEA00F5D8D4 /* DogType.h */,
+			);
+			path = RustFFIOmnbusIniOS;
+			sourceTree = "<group>";
+		};
+		768B470120E6966900426868 /* RustFFIOmnbusIniOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				768B470220E6966900426868 /* RustFFIOmnbusIniOSTests.swift */,
+				768B470420E6966900426868 /* Info.plist */,
+			);
+			path = RustFFIOmnbusIniOSTests;
+			sourceTree = "<group>";
+		};
+		768B470C20E6966900426868 /* RustFFIOmnbusIniOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				768B470D20E6966900426868 /* RustFFIOmnbusIniOSUITests.swift */,
+				768B470F20E6966900426868 /* Info.plist */,
+			);
+			path = RustFFIOmnbusIniOSUITests;
+			sourceTree = "<group>";
+		};
+		768B471E20E696B700426868 /* Rust_FFI_Omnbus */ = {
+			isa = PBXGroup;
+			children = (
+				768B473F20E7EA2100426868 /* convertlib.sh */,
+				768B472E20E6981D00426868 /* Makefile */,
+				768B471F20E696B700426868 /* Cargo.toml */,
+				768B472020E696B700426868 /* Cargo.lock */,
+				768B472120E696B700426868 /* .gitignore */,
+				768B472220E696B700426868 /* src */,
+			);
+			path = Rust_FFI_Omnbus;
+			sourceTree = "<group>";
+		};
+		768B472220E696B700426868 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				768B475220E9ACCE00426868 /* rust_to_swift.rs */,
+				768B474E20E926A600426868 /* swift_to_rust.rs */,
+				768B472320E696B700426868 /* lib.rs */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		768B46E920E6966700426868 /* RustFFIOmnbusIniOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 768B471220E6966900426868 /* Build configuration list for PBXNativeTarget "RustFFIOmnbusIniOS" */;
+			buildPhases = (
+				768B46E620E6966700426868 /* Sources */,
+				768B46E720E6966700426868 /* Frameworks */,
+				768B46E820E6966700426868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RustFFIOmnbusIniOS;
+			productName = RustFFIOmnbusIniOS;
+			productReference = 768B46EA20E6966700426868 /* RustFFIOmnbusIniOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		768B46FD20E6966900426868 /* RustFFIOmnbusIniOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 768B471520E6966900426868 /* Build configuration list for PBXNativeTarget "RustFFIOmnbusIniOSTests" */;
+			buildPhases = (
+				768B46FA20E6966900426868 /* Sources */,
+				768B46FB20E6966900426868 /* Frameworks */,
+				768B46FC20E6966900426868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				768B470020E6966900426868 /* PBXTargetDependency */,
+			);
+			name = RustFFIOmnbusIniOSTests;
+			productName = RustFFIOmnbusIniOSTests;
+			productReference = 768B46FE20E6966900426868 /* RustFFIOmnbusIniOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		768B470820E6966900426868 /* RustFFIOmnbusIniOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 768B471820E6966900426868 /* Build configuration list for PBXNativeTarget "RustFFIOmnbusIniOSUITests" */;
+			buildPhases = (
+				768B470520E6966900426868 /* Sources */,
+				768B470620E6966900426868 /* Frameworks */,
+				768B470720E6966900426868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				768B470B20E6966900426868 /* PBXTargetDependency */,
+			);
+			name = RustFFIOmnbusIniOSUITests;
+			productName = RustFFIOmnbusIniOSUITests;
+			productReference = 768B470920E6966900426868 /* RustFFIOmnbusIniOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		768B46E220E6966700426868 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = piaojin;
+				TargetAttributes = {
+					768B46E920E6966700426868 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					768B46FD20E6966900426868 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 768B46E920E6966700426868;
+					};
+					768B470820E6966900426868 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 768B46E920E6966700426868;
+					};
+				};
+			};
+			buildConfigurationList = 768B46E520E6966700426868 /* Build configuration list for PBXProject "RustFFIOmnbusIniOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 768B46E120E6966700426868;
+			productRefGroup = 768B46EB20E6966700426868 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				768B46E920E6966700426868 /* RustFFIOmnbusIniOS */,
+				768B46FD20E6966900426868 /* RustFFIOmnbusIniOSTests */,
+				768B470820E6966900426868 /* RustFFIOmnbusIniOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		768B46E820E6966700426868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768B472420E696B700426868 /* Cargo.toml in Resources */,
+				768B475320E9ACCE00426868 /* rust_to_swift.rs in Resources */,
+				768B472720E696B700426868 /* lib.rs in Resources */,
+				768B474F20E926A600426868 /* swift_to_rust.rs in Resources */,
+				768B474020E7EA2100426868 /* convertlib.sh in Resources */,
+				768B46F820E6966900426868 /* LaunchScreen.storyboard in Resources */,
+				768B472520E696B700426868 /* Cargo.lock in Resources */,
+				768B46F520E6966900426868 /* Assets.xcassets in Resources */,
+				768B472620E696B700426868 /* .gitignore in Resources */,
+				768B46F320E6966700426868 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768B46FC20E6966900426868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768B470720E6966900426868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		768B46E620E6966700426868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768B471D20E6969100426868 /* IZipCodeDatabase.swift in Sources */,
+				768B46F020E6966700426868 /* ViewController.swift in Sources */,
+				768B472F20E6981D00426868 /* Makefile in Sources */,
+				768B46EE20E6966700426868 /* AppDelegate.swift in Sources */,
+				768B474C20E920AB00426868 /* SuperDogViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768B46FA20E6966900426868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768B470320E6966900426868 /* RustFFIOmnbusIniOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768B470520E6966900426868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768B470E20E6966900426868 /* RustFFIOmnbusIniOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		768B470020E6966900426868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 768B46E920E6966700426868 /* RustFFIOmnbusIniOS */;
+			targetProxy = 768B46FF20E6966900426868 /* PBXContainerItemProxy */;
+		};
+		768B470B20E6966900426868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 768B46E920E6966700426868 /* RustFFIOmnbusIniOS */;
+			targetProxy = 768B470A20E6966900426868 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		768B46F120E6966700426868 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				768B46F220E6966700426868 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		768B46F620E6966900426868 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				768B46F720E6966900426868 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		768B471020E6966900426868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		768B471120E6966900426868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		768B471320E6966900426868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RustFFIOmnbusIniOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rust_FFI_Omnbus/target/debug",
+					"$(PROJECT_DIR)/Rust_FFI_Omnbus/target/x86_64-apple-ios/debug",
+					"$(PROJECT_DIR)/Rust_FFI_Omnbus",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.piaojin.RustFFIOmnbusIniOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RustFFIOmnbusIniOS/RustFFIOmnbusIniOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		768B471420E6966900426868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RustFFIOmnbusIniOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rust_FFI_Omnbus/target/debug",
+					"$(PROJECT_DIR)/Rust_FFI_Omnbus/target/x86_64-apple-ios/debug",
+					"$(PROJECT_DIR)/Rust_FFI_Omnbus",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.piaojin.RustFFIOmnbusIniOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RustFFIOmnbusIniOS/RustFFIOmnbusIniOS-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		768B471620E6966900426868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RustFFIOmnbusIniOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.piaojin.RustFFIOmnbusIniOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RustFFIOmnbusIniOS.app/RustFFIOmnbusIniOS";
+			};
+			name = Debug;
+		};
+		768B471720E6966900426868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RustFFIOmnbusIniOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.piaojin.RustFFIOmnbusIniOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RustFFIOmnbusIniOS.app/RustFFIOmnbusIniOS";
+			};
+			name = Release;
+		};
+		768B471920E6966900426868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RustFFIOmnbusIniOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.piaojin.RustFFIOmnbusIniOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RustFFIOmnbusIniOS;
+			};
+			name = Debug;
+		};
+		768B471A20E6966900426868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RustFFIOmnbusIniOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.piaojin.RustFFIOmnbusIniOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RustFFIOmnbusIniOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		768B46E520E6966700426868 /* Build configuration list for PBXProject "RustFFIOmnbusIniOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768B471020E6966900426868 /* Debug */,
+				768B471120E6966900426868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		768B471220E6966900426868 /* Build configuration list for PBXNativeTarget "RustFFIOmnbusIniOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768B471320E6966900426868 /* Debug */,
+				768B471420E6966900426868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		768B471520E6966900426868 /* Build configuration list for PBXNativeTarget "RustFFIOmnbusIniOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768B471620E6966900426868 /* Debug */,
+				768B471720E6966900426868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		768B471820E6966900426868 /* Build configuration list for PBXNativeTarget "RustFFIOmnbusIniOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768B471920E6966900426868 /* Debug */,
+				768B471A20E6966900426868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 768B46E220E6966700426868 /* Project object */;
+}

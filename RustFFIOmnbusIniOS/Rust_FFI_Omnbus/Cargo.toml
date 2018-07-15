@@ -1,0 +1,15 @@
+#[warn(non_snake_case)]
+[package]
+name = "Rust_FFI_Omnbus"
+version = "0.1.0"
+authors = ["Zoey Weng <zoey.weng@ringcentral.com>"]
+
+[dependencies]
+libc = "*"
+
+[lib]
+#[warn(non_snake_case)]
+name = "Rust_FFI_Omnbus"
+# crate-type = ["cdylib"]
+crate-type = ["staticlib"]
+# crate-type = ["staticlib", "cdylib", "rlib"]
