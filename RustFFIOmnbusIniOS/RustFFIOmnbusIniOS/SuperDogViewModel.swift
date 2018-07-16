@@ -68,6 +68,7 @@ class SuperDogViewModel {
     
     deinit {
         print("SuperDogViewModel being deallocated")
+//        free(&self.i_Super_Dog_Delegate)
     }
     
     init(delegate: SuperDogDelegate) {
@@ -82,8 +83,8 @@ class SuperDogViewModel {
     
     //Swift对象发送给Rust
     func sendToRust() {
-//        super_dog_set_delegate_to_rust(self.superDogPtr)
-        super_dog_call_back(self.superDogPtr)
+        super_dog_set_delegate_to_rust(self.superDogPtr)
+//        super_dog_call_back(self.superDogPtr)
     }
 }
 

@@ -168,12 +168,13 @@ pub unsafe extern fn super_dog_set_dog_type(ptr: *mut SuperDog, dog_type: DogTyp
 
 //这种方式放线程中去回调回crash
 #[no_mangle]
-pub unsafe extern fn super_dog_set_delegate_to_rust(ptr: &'static SuperDog) {
+pub unsafe extern fn super_dog_set_delegate_to_rust(ptr: *const SuperDog) {
     println!("super_dog_set_delegate_to_rust moving SwiftObject onto a new thread created by Rust");
-    // assert!(!ptr.is_null());
+    assert!(!ptr.is_null());
+    let dog = &*ptr;//unsafe
     // ***方式一 start***
     // let super_dog_delegate_wrapper = ISuperDogDelegateWrapper {
-    //     delegate: &ptr.delegate,
+    //     delegate: &dog.delegate,
     // };
     
     // let super_dog_delegate_wrapper = Arc::new(Mutex::new(super_dog_delegate_wrapper));
@@ -188,7 +189,7 @@ pub unsafe extern fn super_dog_set_delegate_to_rust(ptr: &'static SuperDog) {
     // ***方式一 end***
 
     // ***方式二 start***
-    let super_dog_delegate_wrapper = ISuperDogDelegateWrapper(&ptr.delegate);
+    let super_dog_delegate_wrapper = ISuperDogDelegateWrapper(&dog.delegate);
     
     let super_dog_delegate_wrapper = Arc::new(Mutex::new(super_dog_delegate_wrapper));
     let super_dog_delegate_wrapper = Arc::clone(&super_dog_delegate_wrapper);
@@ -203,9 +204,9 @@ pub unsafe extern fn super_dog_set_delegate_to_rust(ptr: &'static SuperDog) {
 }
 
 #[no_mangle]
-pub unsafe extern fn super_dog_call_back(ptr: &'static SuperDog) {
+pub unsafe extern fn super_dog_call_back(ptr: *const SuperDog) {
     println!("super_dog_call_back moving SwiftObject onto a new thread created by Rust");
-    // assert!(!ptr.is_null());
+    assert!(!ptr.is_null());
     let ptr = &*ptr;//unsafe
     ptr.super_dog_call_back(&ptr.delegate);
 }
